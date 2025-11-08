@@ -10,8 +10,8 @@ from typing import Optional
 # ---------------- CONFIG ----------------
 LOA_CHANNEL_ID = 1419090333068820631      # <-- set your LOA log channel ID
 APPROVER_ROLE_ID = 1416873675830857759    # <-- role allowed to approve/deny
-EMBED_COLOR = 0x8a8a8a
-THUMBNAIL_URL = "https://cdn.discordapp.com/attachments/1393744613709447301/1416939202838532106/image.png?ex=68cfeb37&is=68ce99b7&hm=04a965c1e6f6a08a57773dbcfc74b08712594b7a6bb29f20de70cbcb0c78d92b&"
+EMBED_COLOR = 0xE7BB19
+THUMBNAIL_URL = "https://media.discordapp.net/attachments/1400897643772907640/1424180413076606977/Untitled_design_4.png?ex=69107e9e&is=690f2d1e&hm=74989a85019ed50ac5814b2ce101c204b3f26cfe13a3d62351af0d34c5e76cad&=&format=webp&quality=lossless"
 
 # Approve / Deny custom_id templates (you can replace these with your fixed IDs)
 # They will include the target user id so interactions are scoped.

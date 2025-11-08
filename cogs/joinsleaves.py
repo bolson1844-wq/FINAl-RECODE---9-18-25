@@ -7,8 +7,8 @@ from datetime import datetime, timezone
 # ------------------------------
 GUILD_ID = 1416869400748757124  # Replace with your department server ID
 CHANNEL_ID = 1416912156569636985  # Replace with the channel ID for logs
-DEPARTMENT_LOGO = "https://cdn.discordapp.com/attachments/1400670794232631369/1402316853040124014/image.png?ex=68cd7ad7&is=68cc2957&hm=a0b39324d93817bf46838e1c3eed87ddfd93089adb2dffbdaabe2a7e90188503&"
-COLOR_SCHEME = 0x8A8A8A  # Department gray
+DEPARTMENT_LOGO = "https://media.discordapp.net/attachments/1400897643772907640/1424180413076606977/Untitled_design_4.png?ex=69107e9e&is=690f2d1e&hm=74989a85019ed50ac5814b2ce101c204b3f26cfe13a3d62351af0d34c5e76cad&=&format=webp&quality=lossless"
+COLOR_SCHEME = 0xE7BB19  # Department gray
 
 
 class OfficerLoggerCog(commands.Cog):

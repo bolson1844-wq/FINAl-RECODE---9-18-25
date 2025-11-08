@@ -39,7 +39,7 @@ class ContactSystem(commands.Cog):
                     embed = discord.Embed(
                         title="New Reply",
                         description=message.content,
-                        color=0x8A8A8A,
+                        color=0xE7BB19,
                     )
                     embed.set_thumbnail(
                         url="https://cdn.discordapp.com/attachments/1411384487694307349/1411384964133421107/icon_26.png"
@@ -60,7 +60,7 @@ class ContactSystem(commands.Cog):
                     "If you have a concern or require assistance, please create a support ticket by pressing the button below. "
                     "Your request will be directed to the **Senora Valley Police Department Supervisory Board**."
                 ),
-                color=0x8A8A8A,
+                color=0xE7BB19,
             )
             await message.channel.send(embed=embed, view=view)
 
@@ -91,25 +91,25 @@ class ContactSystem(commands.Cog):
         if any(r.id == ROLE_SERVER_MANAGEMENT for r in member.roles):
             return (
                 "Server Management",
-                0x8A8A8A,
-                "https://cdn.discordapp.com/attachments/1400670794232631369/1402316853040124014/image.png?ex=68cd7ad7&is=68cc2957&hm=a0b39324d93817bf46838e1c3eed87ddfd93089adb2dffbdaabe2a7e90188503&",
+                0xE7BB19,
+                "https://media.discordapp.net/attachments/1400897643772907640/1424180413076606977/Untitled_design_4.png?ex=69107e9e&is=690f2d1e&hm=74989a85019ed50ac5814b2ce101c204b3f26cfe13a3d62351af0d34c5e76cad&=&format=webp&quality=lossless",
             )
         if any(r.id == ROLE_DEPT_ADMIN for r in member.roles):
             return (
                 "Department Administration",
-                0x8A8A8A,
-                "https://cdn.discordapp.com/attachments/1400670794232631369/1402316853040124014/image.png?ex=68cd7ad7&is=68cc2957&hm=a0b39324d93817bf46838e1c3eed87ddfd93089adb2dffbdaabe2a7e90188503&",
+                0xE7BB19,
+                "https://media.discordapp.net/attachments/1400897643772907640/1424180413076606977/Untitled_design_4.png?ex=69107e9e&is=690f2d1e&hm=74989a85019ed50ac5814b2ce101c204b3f26cfe13a3d62351af0d34c5e76cad&=&format=webp&quality=lossless",
             )
         if any(r.id == ROLE_SUPERVISOR for r in member.roles):
             return (
                 "Department Supervisor",
-                0x8A8A8A,
-                "https://cdn.discordapp.com/attachments/1400670794232631369/1402316853040124014/image.png?ex=68cd7ad7&is=68cc2957&hm=a0b39324d93817bf46838e1c3eed87ddfd93089adb2dffbdaabe2a7e90188503&",
+                0xE7BB19,
+                "https://media.discordapp.net/attachments/1400897643772907640/1424180413076606977/Untitled_design_4.png?ex=69107e9e&is=690f2d1e&hm=74989a85019ed50ac5814b2ce101c204b3f26cfe13a3d62351af0d34c5e76cad&=&format=webp&quality=lossless",
             )
         return (
             "Department Supervisor",
-            0x8A8A8A,
-            "https://cdn.discordapp.com/attachments/1400670794232631369/1402316853040124014/image.png?ex=68cd7ad7&is=68cc2957&hm=a0b39324d93817bf46838e1c3eed87ddfd93089adb2dffbdaabe2a7e90188503&",
+            0xE7BB19,
+            "https://media.discordapp.net/attachments/1400897643772907640/1424180413076606977/Untitled_design_4.png?ex=69107e9e&is=690f2d1e&hm=74989a85019ed50ac5814b2ce101c204b3f26cfe13a3d62351af0d34c5e76cad&=&format=webp&quality=lossless",
         )
 
 
@@ -164,7 +164,7 @@ class ContactModal(discord.ui.Modal, title="Contact Form"):
                     f"**User:** {self.user.mention}\n"
                     f"**Date Submitted:** {now}"
                 ),
-                color=0x8A8A8A,
+                color=0xE7BB19,
             )
 
             view = TicketControls(self.cog, self.user)
@@ -177,10 +177,10 @@ class ContactModal(discord.ui.Modal, title="Contact Form"):
                     "before contacting a department manager.\n\n"
                     f"{self.inquiry.value}"
                 ),
-                color=0x8A8A8A,
+                color=0xE7BB19,
             )
             embed_dm.set_thumbnail(
-                url="https://cdn.discordapp.com/attachments/1400670794232631369/1402316853040124014/image.png?ex=68cd7ad7&is=68cc2957&hm=a0b39324d93817bf46838e1c3eed87ddfd93089adb2dffbdaabe2a7e90188503&"
+                url="https://media.discordapp.net/attachments/1400897643772907640/1424180413076606977/Untitled_design_4.png?ex=69107e9e&is=690f2d1e&hm=74989a85019ed50ac5814b2ce101c204b3f26cfe13a3d62351af0d34c5e76cad&=&format=webp&quality=lossless"
             )
             try:
                 await self.user.send(embed=embed_dm)

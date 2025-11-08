@@ -9,7 +9,7 @@ import json, os
 ZTP_ROLE_ID = 1416879960949260410
 ZTP_LOG_CHANNEL_ID = 1416893097291284500
 ZTP_STORAGE_FILE = 'ztp.json'
-THUMBNAIL_URL = "https://cdn.discordapp.com/attachments/1404261424724709376/1413750488616144936/image.png?ex=68bd113e&is=68bbbfbe&hm=9e1f6589f7368d064ead6c8957bf70ae6887ad44e1d657c9ff8b82a3784e7511&"
+THUMBNAIL_URL = "https://media.discordapp.net/attachments/1400897643772907640/1424180413076606977/Untitled_design_4.png?ex=69107e9e&is=690f2d1e&hm=74989a85019ed50ac5814b2ce101c204b3f26cfe13a3d62351af0d34c5e76cad&=&format=webp&quality=lossless"
 ADMIN_ID = 1221986685634613338
 SUPERVISOR_ROLE_ID = 1416876088331604048
 
@@ -98,7 +98,7 @@ class ZTPCog(commands.Cog):
                     f"{target.mention} has been issued a Zero Tolerance Policy within the Senora Valley Police Department by the Supervisory Board.\n\n"
                     f"- `Length:` {length} day(s)"
                 ),
-                color=0x8a8a8a
+                color=0xE7BB19
             )
             embed_log.set_thumbnail(url=THUMBNAIL_URL)
 
@@ -113,7 +113,7 @@ class ZTPCog(commands.Cog):
                     "- ZTP added\n\n"
                     "You can use the `/ztp` command (set type to Check) to check your ZTP status at any time."
                 ),
-                color=0x8a8a8a
+                color=0xE7BB19
             )
             embed_dm.set_thumbnail(url=THUMBNAIL_URL)
 
@@ -136,7 +136,7 @@ class ZTPCog(commands.Cog):
                 embed_dm = discord.Embed(
                     title="SVPD | Zero-Tolerance Policy Status",
                     description=f"{target.mention} currently has **no active Zero-Tolerance Policy**.",
-                    color=0x8a8a8a
+                    color=0xE7BB19
                 )
                 embed_dm.set_thumbnail(url=THUMBNAIL_URL)
                 try:
@@ -167,7 +167,7 @@ class ZTPCog(commands.Cog):
                 embed_dm = discord.Embed(
                     title="SVPD | Zero-Tolerance Policy Status",
                     description=f"{target.mention} previously had a Zero-Tolerance Policy which has now expired.",
-                    color=0x8a8a8a
+                    color=0xE7BB19
                 )
                 embed_dm.set_thumbnail(url=THUMBNAIL_URL)
                 try:
@@ -189,7 +189,7 @@ class ZTPCog(commands.Cog):
                     f"- `Issued:` {issued_dt.strftime('%d-%m-%Y %H:%M:%S UTC')}\n"
                     f"- `Days Left:` {days_left} day(s)"
                 ),
-                color=0x8a8a8a
+                color=0xE7BB19
             )
             embed_dm.set_thumbnail(url=THUMBNAIL_URL)
             try:

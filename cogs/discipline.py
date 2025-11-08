@@ -22,8 +22,8 @@ DISCIPLINE_LEVELS = {
     "Blacklist": 4,
 }
 
-COLOR = discord.Color(int("8a8a8a", 16))
-LOGO_URL = "https://cdn.discordapp.com/attachments/1231290151708131379/1403809096544813109/Untitled_design__3_-removebg-preview.png?ex=68c9ae1a&is=68c85c9a&hm=a885942430a9f12904a8aa0695e9bdad5af427377c3f7d5c0d9f3788b994678b&"
+COLOR = discord.Color(int("E7BB19", 16))
+LOGO_URL = "https://media.discordapp.net/attachments/1400897643772907640/1424180413076606977/Untitled_design_4.png?ex=69107e9e&is=690f2d1e&hm=74989a85019ed50ac5814b2ce101c204b3f26cfe13a3d62351af0d34c5e76cad&=&format=webp&quality=lossless"
 
 # ---------------- Authorization ----------------
 def get_user_level(user_id: int) -> int | None:
